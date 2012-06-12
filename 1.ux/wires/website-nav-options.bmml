@@ -1,0 +1,173 @@
+<mockup version="1.0" skin="sketch" measuredW="1791" measuredH="870" mockupW="1770" mockupH="837">
+  <controls>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::iPhone" x="21" y="37" w="418" h="750" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bgPattern>allWhite</bgPattern>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="__group__" x="74" y="410" w="312" h="203" measuredW="312" measuredH="203" zOrder="1" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Button" x="0" y="0" w="312" h="47" measuredW="66" measuredH="28" zOrder="0" locked="false" isInGroup="4">
+          <controlProperties>
+            <text>ABOUT</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="0" y="52" w="312" h="47" measuredW="58" measuredH="28" zOrder="1" locked="false" isInGroup="4">
+          <controlProperties>
+            <text>TEAM</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Button" x="0" y="104" w="312" h="47" measuredW="62" measuredH="28" zOrder="2" locked="false" isInGroup="4">
+          <controlProperties>
+            <text>WORK</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Button" x="0" y="156" w="312" h="47" measuredW="82" measuredH="28" zOrder="3" locked="false" isInGroup="4">
+          <controlProperties>
+            <text>CONTACT</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Image" x="136" y="196" w="187" h="69" measuredW="77" measuredH="79" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>logo</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Paragraph" x="69" y="273" w="317" h="154" measuredW="200" measuredH="140" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <size>32</size>
+        <text>Sharpen%20the%0ACutting%20Edge</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::iPhone" x="473" y="37" w="418" h="750" measuredW="282" measuredH="510" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bgPattern>allWhite</bgPattern>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Canvas" x="515" y="181" w="331" h="32" measuredW="100" measuredH="70" zOrder="5" locked="false" isInGroup="-1"/>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Icon" x="523" y="185" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>StarIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Paragraph" x="514" y="185" w="317" h="26" measuredW="200" measuredH="140" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <size>14</size>
+        <text>Hone%20-%20sharpen%20the%20cutting%20edge</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Button" x="515" y="213" w="168" h="88" measuredW="58" measuredH="28" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>about</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Button" x="678" y="213" w="168" h="88" measuredW="53" measuredH="28" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>team</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Button" x="515" y="297" w="168" h="88" measuredW="53" measuredH="28" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>work</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Button" x="678" y="297" w="168" h="88" measuredW="68" measuredH="28" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>contact</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::iPhone" x="930" y="37" w="418" h="750" measuredW="282" measuredH="510" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bgPattern>allWhite</bgPattern>
+      </controlProperties>
+    </control>
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::LinkBar" x="1022" y="196" w="-1" h="-1" measuredW="222" measuredH="23" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>About%2C%20Team%2C%20Work%2C%20Contact</text>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::Image" x="981" y="237" w="154" h="58" measuredW="77" measuredH="79" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>logo</text>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::CheckBoxGroup" x="987" y="505" w="-1" h="-1" measuredW="148" measuredH="138" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%5B%20%5D%20brand%20design%0A%5B%20%5D%20web%20development%0A%5B%20%5D%20mobile%20compatibility%0A%5B%20%5D%20content%20strategy%0A%5B%20%5D%20SEO%0A%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::CheckBoxGroup" x="1146" y="505" w="-1" h="-1" measuredW="143" measuredH="138" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%5B%20%5D%20marketing%20strategy%0A%5B%20%5D%20e-commerce%0A%5B%20%5D%20responsive%20design%0A%5B%20%5D%20creative%20direction%0A%5B%20%5D%20animation%0A%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::Paragraph" x="1141" y="232" w="153" h="68" measuredW="200" measuredH="140" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>24</size>
+        <text>Sharpen%20the%20Cutting%20Edge</text>
+      </controlProperties>
+    </control>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::HRule" x="981" y="222" w="313" h="-1" measuredW="100" measuredH="5" zOrder="19" locked="false" isInGroup="-1"/>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::iPhone" x="1373" y="33" w="418" h="750" measuredW="282" measuredH="510" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bgPattern>allWhite</bgPattern>
+      </controlProperties>
+    </control>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::ComboBox" x="1626" y="201" w="-1" h="-1" measuredW="109" measuredH="46" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>menu</text>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::Image" x="1426" y="190" w="154" h="58" measuredW="77" measuredH="79" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>logo</text>
+      </controlProperties>
+    </control>
+    <control controlID="40" controlTypeID="__group__" x="981" y="321" w="419" h="161" measuredW="419" measuredH="161" zOrder="18" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Paragraph" x="6" y="56" w="307" h="105" measuredW="200" measuredH="140" zOrder="0" locked="false" isInGroup="40">
+          <controlProperties>
+            <size>16</size>
+            <text>We%20create%20world-class%20eperiences%20for%20a%20wide%20range%20of%20lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipisicing%20elit%2C%20sed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%20Ut%20enim%20ad%20minim%20veniam%2C%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20commodo%20consequat.%20Duis%20aute%20irure%20dolor%20in%20reprehenderit%20in%20voluptate%20velit%20esse%20cillum%20dolore%20eu%20fugiat%20nulla%20pariatur.%20Excepteur%20sint%20occaecat%20cupidatat%20non%20proident%2C%20sunt%20in%20culpa%20qui%20officia%20deserunt%20mollit%20anim%20id%20est%20laborum.</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Title" x="0" y="0" w="419" h="-1" measuredW="237" measuredH="57" zOrder="1" locked="false" isInGroup="40">
+          <controlProperties>
+            <align>left</align>
+            <size>40</size>
+            <text>We%20Create...</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::HRule" x="1424" y="259" w="313" h="-1" measuredW="100" measuredH="5" zOrder="23" locked="false" isInGroup="-1"/>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::Image" x="1426" y="306" w="309" h="224" measuredW="77" measuredH="79" zOrder="24" locked="false" isInGroup="-1"/>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::Paragraph" x="1426" y="273" w="133" h="30" measuredW="200" measuredH="140" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Featured%20Projects</text>
+      </controlProperties>
+    </control>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::Image" x="1426" y="546" w="103" h="90" measuredW="77" measuredH="79" zOrder="26" locked="false" isInGroup="-1"/>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::Image" x="1426" y="780" w="98" h="90" measuredW="77" measuredH="79" zOrder="27" locked="false" isInGroup="-1"/>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::Image" x="1529" y="546" w="103" h="90" measuredW="77" measuredH="79" zOrder="28" locked="false" isInGroup="-1"/>
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::Image" x="1632" y="546" w="103" h="90" measuredW="77" measuredH="79" zOrder="29" locked="false" isInGroup="-1"/>
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::Paragraph" x="529" y="640" w="307" h="25" measuredW="200" measuredH="140" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>We%20create%20world-class%20eperiences%20for%20a%20wide%20range%20of%20lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipisicing%20elit%2C%20sed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%20Ut%20enim%20ad%20minim%20veniam%2C%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20commodo%20consequat.%20Duis%20aute%20irure%20dolor%20in%20reprehenderit%20in%20voluptate%20velit%20esse%20cillum%20dolore%20eu%20fugiat%20nulla%20pariatur.%20Excepteur%20sint%20occaecat%20cupidatat%20non%20proident%2C%20sunt%20in%20culpa%20qui%20officia%20deserunt%20mollit%20anim%20id%20est%20laborum.</text>
+      </controlProperties>
+    </control>
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::Title" x="523" y="584" w="419" h="-1" measuredW="114" measuredH="56" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <size>40</size>
+        <text>About</text>
+      </controlProperties>
+    </control>
+    <control controlID="53" controlTypeID="com.balsamiq.mockups::Image" x="520" y="397" w="324" h="172" measuredW="77" measuredH="79" zOrder="32" locked="false" isInGroup="-1"/>
+  </controls>
+</mockup>
