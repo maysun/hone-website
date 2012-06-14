@@ -12,62 +12,184 @@ TABLE OF CONTENTS:
 
 =============================================================================================================================================== */
 
+#slide-client{
+color:white;
+font-size:20px;
+}
+
+
+#designBox{width:285px; height:171px;  background-color:#f1f4f6; background-image: url(cardBg.jpg); background-repeat:no-repeat;  margin:35px; cursor:pointer; text-align:center;
+-webkit-user-select: none; 
+	-khtml-user-select: none; 
+	-moz-user-select: none; 
+	-o-user-select: none; 
+	user-select: none;
+	outline:none}
 
 /* 1. RESET  ================================================================================================================================= */
 
 html{-webkit-overflow-scrolling:touch;-webkit-tap-highlight-color: rgba(204,0,0,0);-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}p,ol,ul,dl,address{/* color:#222; */margin-bottom:0;font-size:1em;}p{hyphens:auto;text-align:justify;-webkit-hyphens:auto;-webkit-hyphenate-character:\2010;-webkit-hyphenate-limit-after:1;-webkit-hyphenate-limit-before:3;-moz-hyphens:auto;}ul,ol{margin:0;padding:0;}li ul,li ol{font-size:1em;margin:0;}ol{display:compact;list-style-type:none;}dl,dd{margin-bottom:1.5em;}dt{font-weight:400;}blockquote{padding-left:24px;border-left:1px solid #c8c8c8;font-style:italic;margin:0 0 1.5em -24px;}abbr[title]{border-bottom:1px dotted;cursor:help;}b,strong{font-weight:700;}dfn{font-style:italic;}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}ins{background-color:#f0f0f0;color:#000;text-decoration:none;}mark{background-color:#f0f0f0;color:#000;font-style:italic;font-weight:700;}pre,code,kbd,samp{font-family:monospace, monospace;font-size:.875em;line-height:1.5;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:none;}small{font-size:1em;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}a:active{outline:none;}:focus{outline:none;-moz-outline-style:none;}form{margin:0;}fieldset{margin-bottom:0;border-width:0;padding:0;}legend{margin-left:-7px;border-width:0;padding:0;}label{font-weight:400;cursor:pointer;}.clearfix:before,.clearfix:after{content:"\0020";display:block;height:0;overflow:hidden;}.clearfix:after{clear:both;}.clearfix{zoom:1;}article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}::selection,::-moz-selection,::-webkit-selection{background:#000;color:#E2E3DF;text-shadow:#000 0 1px 1px;}.ie7 img,.iem7 img{-ms-interpolation-mode:bicubic;}blockquote:before,blockquote:after,q:before,q:after,q:before,q:after{content:none;}::-webkit-input-placeholder,input:-moz-placeholder{font-size:.875em;line-height:1.4;}iframe{border:none;}a img {outline: none; border: none;}input:-webkit-autofill {background-color: #e2e3df;background-image: none;color: #62696B;} .seo {text-indent: -9999px; visibility: collapse; display: none;}
 
+*{-webkit-text-size-adjust: none; -ms-text-size-adjust:none;-webkit-tap-highlight-color: rgba(0,0,0,0);outline: none}
+
+h1, h2, h3, a, .honeLogoType, .andSymbol, #box, .title, form, ul,.honeLogo,.teamMemberContainer{-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-o-user-select: none;user-select: none; cursor:default}
 
 /* 2. HTML ROOT  ============================================================================================================================== */
 
 
-html {display:block; width:100%; height:100%; margin: 0; padding: 0;  background: url(../img/bg.jpg) repeat #2e2e2e;}
-body {width:100%; height:100%; background:url(../img/logo.png) center center no-repeat; background-size: 50%; margin: 0; padding: 0;}
-
+html { margin: 80px 10px 20px 10px; padding: 0; background:url(../img/tileBg.jpg) fixed; /*background-size: 50%;*/}
+body {width:100%; height:100%; margin:0; padding: 0; *font-size: 1em;font-weight: 200; font-size: 90%; line-height: 1.5625em; text-align: justify; color:#fff;font-family: 'Open Sans', sans-serif; 
+	-webkit-font-smoothing:antialiased; font-smoothing:antialiased; text-rendering:optimizeLegibility;}
 
 
 /* 3. TYPOGRAPHY  ============================================================================================================================= */
 
-body {
-	*font-size: 1em;font-weight: 300; font-size: 1em; line-height: 1.5625em; text-align: justify;
-	font-family: Helvetica, Arial, sans-serif; color: #2e3233;
-	-webkit-font-smoothing:antialiased; font-smoothing:antialiased; text-rendering:optimizeLegibility;
-}
+@font-face {font-family:'thin';src:url('../fonts/quicksand-light.ttf') format("truetype")}
+@font-face {font-family:'akashi';src:url('../fonts/akashi.ttf') format("truetype")}
 
-h1, h2, h3, h4, h5, h6 {font-family: Helvetica, sans-serif; color:#222; font-weight: 700; text-align: left; line-height: 1.5em; margin: 0; padding: 0;}
+
+h1, h2, h3, h4, h5, h6 {font-family: Verdana, Helvetica, sans-serif; font-weight: 200; text-align: left; line-height: 1.5em; margin: 0; padding: 0; letter-spacing:1px;}
 h1 {font-size: 2.55em; line-height: 1.2em;}		/* 40px */
 h2 {font-size: 2.0em; line-height: 1.2em;}		/* 32px */
 h3 {font-size: 1.75em; line-height: 1.2em;}		/* 28px */
-h4 {font-size: 1.5em; line-height: 1.2em;}		/* 24px */
+h4 {font-size: 1.5em; linev-height: 1.2em;}		/* 24px */
 h5 {font-size: 1.375em; line-height: 1.2em;}	/* 22px */
 h6 {font-size: 1.125em; line-height: 1.2em;}	/* 18px */
 p  {font-size: 1em; margin: 0; padding: 0;}		/* 16px */
 
+.transparent{alpha(opacity=20); opacity: 0.2}
+
+/* rotate 
+
+-moz-transform:rotate(35deg);
+-webkit-transform:rotate(35deg);
+
+*/
+
+/* 4. CONTENT  ============================================================================================================================== */
+
+.honeDoubleSeparator{width:100%; border-top:1px solid #4f5051; border-bottom:1px solid #4f5051; height:1px}
+
+.shadow {
+-moz-box-shadow: 3px 3px 4px #000;
+-webkit-box-shadow: 3px 3px 4px #000;
+box-shadow: 1px 3px 30px #1c1c1c;
+/* For IE 8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+/* For IE 5.5 - 7 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+
+	.honeNav:hover{z-index:910}
+	
+	
+	
+/* Animations */
+@keyframes setHeight
+{
+from {transform: scale(1.0)}
+to {height:200px}
+
+}
 
 
+@-moz-keyframes setHeight 
+{
+0% {height:50px}
+100% {height:200px}
 
-/* 4. CONTENT  ============================================================================================================================ */
+}
+
+@-webkit-keyframes setHeight 
+{
+from {height:50px}
+to {height:200px}
+
+} 
+	
 
 /* @media screen and (min-width: 320px) =================================================================================================== */
 @media screen and (min-width: 20em) {
+	
+#honeHead{position:fixed;z-index:900;display:block;top:0;left:0;right:0;background:url(../img/tileHeadBg.png) repeat scroll 0 0 transparent; padding:10px; border-bottom:1px solid #333}
+	
+.honeNav{cursor:pointer;float:right; width:60px; height:24px; background:#999; color:#fff; padding:10px}
+	
+.honeNav:hover{height:200px}
+	
+.honeLogo{cursor:pointer;width:45px; height:45px; float:left; margin-right:8px}
+
+.honeMotto {font-family:'Chango'; margin:0 0 20px 0}
+
+.honeCreed {font-family: 'Open Sans', sans-serif; color:#fff; font-size:16px}
+
+.honeLogoType {font-family:'thin', Arial, verdana, Helvetica, sans-serif; font-size:28px;color:#CCC;}
+
+.title {font-family: Arial, verdana, Helvetica, sans-serif; font-size:40px; color:#fff; clear:both; padding:0 0 13px 0; margin:30px 0 0 0}
+
+.honeServicesCategory{display:block; cursor:pointer; padding:10px 0 11px 2px; font-size:21px; border-bottom:1px solid #4f5051; text-indent:6px; color:#919192; width:100%}
 
 
 
+
+.honeServicesCategory img{float:right; padding:9px 8px 0 0}
+
+.honeServicesList{display:none}
+
+
+.teamMemberContainer{ margin:15px 15px 0 0; width:310px; height:297px; background:#fff}
+
+.servicesList ul{ width:99% }
+
+.servicesList{ margin:15px 15px 0 0 /*border:1px solid gray;*/ padding:0 0 0 0 }
+.servicesList li{list-style-image: none;
+list-style-type: none; text-indent:0; }
+
+
+.honeNav a{color:#999; text-decoration:none; margin:10px 12px 5px 0}
+.honeNav a:hover{color:#fff}
+
+
+.honeContactForm{}
+
+.honeContactForm input{margin-bottom:17px; width:87%; height:25px; padding:5px; border:1px solid lightgray; background:#3B444D; color:#fff; font-size: 15px; -webkit-box-shadow:inset 2px 2px 2px 0 #ddd; -moz-box-shadow:inset 2px 2px 2px 0 #ddd; box-shadow:inset 2px 2px 2px 0 #ddd}
+
+.honeContactForm div{color:#fff; font-size:11px}
+
+.honeFooter{position:absolute; text-align:center; height:50px; background:#212222;left:0;  right:0; margin:5px 0; padding:8px 5px 5px 5px; font-size:13px; letter-spacing:.6px; color:#4e4d4d}
+	
+	
+	
 }
 
 
 
 /* @media screen and (min-width: 480px) =================================================================================================== */
 @media screen and (min-width: 30em) {
-	
+	.honeServicesCategory{display:none}
+	.honeServicesList{display:block}
+	.honeNav{width:auto; background:none;  padding:10px}
+    .honeNav a{width:auto; background:none;  padding:10px}
 
-	
+     .honeNav:hover{}
+	 
+	 .servicesList {
+		 padding:10px 0 0 10px;
+		 text-align:left;
+	-moz-column-count: 4;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 4;
+	-webkit-column-gap: 20px;
+	column-count: 4;
+	column-gap: 20px;
+}
 }
 
 
 
 /* @media screen and (min-width: 720px) =================================================================================================== */
 @media screen and (min-width: 45em) {
+
 
 
 	 
@@ -78,7 +200,6 @@ p  {font-size: 1em; margin: 0; padding: 0;}		/* 16px */
 
 /* @media screen and (min-width: 1024px) =================================================================================================== */
 @media screen and (min-width: 64em) {
-
 
 
 }
