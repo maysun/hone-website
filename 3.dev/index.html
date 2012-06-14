@@ -209,7 +209,7 @@ var cssTransitionSupported = false;
 $(document).ready(function(){isCssTransitionSupported();init()});
 $(window).resize(function() {paper.setViewBox($(window).width() - 45, 7)
 });
-$(document).bind("contextmenu",function(e){return false;});
+/*$(document).bind("contextmenu",function(e){return false;});*/
 function init(){}
 function isCssTransitionSupported(){cssTransitionSupported = $('#test').transition({opacity:1}) ? true : false}
 function doEffect(o,props,speed){$(o)[cssTransitionSupported==false?'transition':'animate'](props,((10/speed)*1000))}
