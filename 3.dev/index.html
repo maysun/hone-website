@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>HONE®</title>
+<title>Hone</title>
 <!--   ///     /////      ///    ////   ///////////
 ///   ///    ////////     ////   ///    ///////////
 ///   ///   ////  ////    /// /  ///    ///
@@ -36,149 +36,126 @@
 <link rel="apple-touch-icon-precomposed" type="text/css" href="/media/img/appIcon.png" >
 <!--<link rel="apple-touch-startup-image" type="text/css" href="/media/img/iOSsplash.png" >-->
 <link media="all" rel="stylesheet" href="media/css/hone.base.css?v=2" />
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
+	<div id='wrapper'>
+		<div class="page-wrapper clearfix">
 
-<header>
-<div id="honeHead">
-    <img onclick="javascript:scroll('body')" class="honeLogo" id="honeLogo" src="media/img/honeLogo.png" alt="Hone"/>
-    <nav>
-        <div class="honeNav">
-        <a href="javascript:scroll('#anchorServices')">Services</a>
-        <a href="javascript:scroll('#anchorContact')">Contact</a>
-        </div>
-    </nav>
-</div>
-</header>
- 
- 
-<section id="honeAbout">
-<h2 class="honeMotto">SHARPEN THE CUTTING EDGE</h2>
-
-<h1 class="honeCreed">Hone is an independent design <a href="javascript:scroll('#anchorCollective')">collective</a> comprised of passionate designers, developers and thinkers committed to inno­va­tive brand design for the digital age. Hone works with orga­ni­za­tions large and small to solve the chal­lenges of con­tem­po­rary design and brand-​building, focused on results that con­tribute to the larger cul­tural context.</h1>
-</section>
-
-<!--<div id="box" onclick="javascript:flip(this)" style="width:300px; height:150px; background-color:#ccc;  padding:2px; float:left; margin-bottom:10px"></div>
-<div class="andSymbol" style="margin-left:20px;float:left; margin-top:65px">&</div>
-
-
- <div id="box" onclick="javascript:flip(this)" style="width:300px; height:150px; background-color:#ccc; padding:2px; margin-left:20px;float:left"></div>
--->
-
-
-<!-- SERVICES -->
-<span id="anchorServices"></span>
-<section id="honeSectionServices">  
-    <div class="title">Services</div>
-    <div class="honeDoubleSeparator"></div>
-    <div class="servicesList">
-    <ul>
-    	<li class="honeServicesCategory">Strategy<img src="media/img/downArrow-TEMP.png" />		</li>
-        <div class="honeServicesList" id="honeServicesStrategy">
-            <li>UX Design</li>
-            <li>Information Architecture</li>
-            <li>Strategic Consulting</li>
-        </div>
-    </ul>
-    
-    <ul>
-    	<li class="honeServicesCategory">Design<img src="media/img/downArrow-TEMP.png" /></li>
-        <div class="honeServicesList" id="honeServicesDesign">
-            <li>Brand Identity</li>
-            <li>Interactive Design</li>
-            <li>Motion Design</li>
-        </div>
-    </ul>
-    
-    <ul>
-    	<li class="honeServicesCategory">Development<img src="media/img/downArrow-TEMP.png" /></li>
-        <div class="honeServicesList" id="honeServicesDevelopment">
-            <li>Content Management Systems</li>
-            <li>Database Architecture</li>
-            <li>Front End Development</li>
-            <li>eCommerce Integration</li>
-        </div>
-    </ul>
-    
-    
-    <ul>
-    	<li class="honeServicesCategory">Mobile<img src="media/img/downArrow-TEMP.png" /></li>
-        <div class="honeServicesList" id="honeServicesDevelopment">
-            <li>Web Applications</li>
-            <li>Responsive User Interface</li>
-            <li>Adaptive Design</li>
-            <li>Smartphone and Tablet Development</li>
-        </div>
-    </ul>
-    
-    </div>
-    
-</section>
-
-
-
-<!-- COLLECTIVE -->
-<span id="anchorCollective"></span>
-<section id="honeSectionTeam">
-<div class="title">Collective</div>
-<div class="honeDoubleSeparator"></div>
-
-
-<div id="honeTeamMemberContainer">
-	
-	<div class="honeTeamMember" style="z-index:3">
-		<img src="media/img/team/mason.png" />
-		<div class="honeTeamMemberName">John "Red" Ginger</div>
-		<div class="honeTeamMemberRole">Creative Technologist</div>
-		<div class="honeTeamMemberSocial">Twitter | Facebook | G+</div>
-		<div class="honeTeamMemberQuote">"Action may not always bring happiness, but there is no happiness without action"</div>
-	</div>
-	
-	<div class="honeTeamMember" style="z-index:2"></div>
-	<div class="honeTeamMember" style="z-index:1"></div>
-	
-</div>
-
-<div id="honeTeamNavContainer">
-	<div class="button" id="buttonPrev"></div>
-	<div class="button" id="buttonNext"></div>
-</div>
-
-
-
-</section>
+			
+		<section id="about">
+			<h2 class="honeMotto">SHARPEN THE CUTTING EDGE</h2>
+		
+			<h1 class="honeCreed">Hone is an independent design <a href="javascript:scroll('#team')">collective</a> comprised of passionate designers, developers and thinkers committed to inno­va­tive brand design for the digital age. Hone works with orga­ni­za­tions large and small to solve the chal­lenges of con­tem­po­rary design and brand-​building, focused on results that con­tribute to the larger cul­tural context.
+			</h1>
+			
+			<div id="services">  
+			    <div class="title">Services</div>
+			    <div class="honeDoubleSeparator"></div>
+			    <div class="servicesList">
+				    <ul>
+				    	<li class="honeServicesCategory">Strategy<img src="media/img/downArrow-TEMP.png" />		</li>
+				        <div class="honeServicesList" id="honeServicesStrategy">
+				            <li>UX Design</li>
+				            <li>Information Architecture</li>
+				            <li>Strategic Consulting</li>
+				        </div>
+				    </ul>
+				    
+				    <ul>
+				    	<li class="honeServicesCategory">Design<img src="media/img/downArrow-TEMP.png" /></li>
+				        <div class="honeServicesList" id="honeServicesDesign">
+				            <li>Brand Identity</li>
+				            <li>Interactive Design</li>
+				            <li>Motion Design</li>
+				        </div>
+				    </ul>
+				    
+				    <ul>
+				    	<li class="honeServicesCategory">Development<img src="media/img/downArrow-TEMP.png" /></li>
+				        <div class="honeServicesList" id="honeServicesDevelopment">
+				            <li>Content Management Systems</li>
+				            <li>Database Architecture</li>
+				            <li>Front End Development</li>
+				            <li>eCommerce Integration</li>
+				        </div>
+				    </ul>
+				    
+				    
+				    <ul>
+				    	<li class="honeServicesCategory">Mobile<img src="media/img/downArrow-TEMP.png" /></li>
+				        <div class="honeServicesList" id="honeServicesDevelopment">
+				            <li>Web Applications</li>
+				            <li>Responsive User Interface</li>
+				            <li>Adaptive Design</li>
+				            <li>Smartphone and Tablet Development</li>
+				        </div>
+				    </ul>
+			    </div><!-- END .servicesList -->
+			</div><!-- END services -->
+		</section><!-- END #about -->
 
 
 
 
 
 
+		<!-- TEAM -->
+		<section id="team">
+			<div id="honeSectionTeam">
+				<div class="title">Collective</div>
+				<div class="honeDoubleSeparator"></div>
+				
+				
+				<div id="honeTeamMemberContainer">
+					
+					<div class="honeTeamMember" style="z-index:3">
+						<img src="media/img/team/mason.png" />
+						<div class="honeTeamMemberName">John "Red" Ginger</div>
+						<div class="honeTeamMemberRole">Creative Technologist</div>
+						<div class="honeTeamMemberSocial">Twitter | Facebook | G+</div>
+						<div class="honeTeamMemberQuote">"Action may not always bring happiness, but there is no happiness without action"</div>
+					</div>
+					
+					<div class="honeTeamMember" style="z-index:2"></div>
+					<div class="honeTeamMember" style="z-index:1"></div>
+					
+				</div>
+				
+				<div id="honeTeamNavContainer">
+					<div class="button" id="buttonPrev"></div>
+					<div class="button" id="buttonNext"></div>
+				</div>
+			</div><!-- END .honeSectionTeam -->
+		</section>
 
-<!-- CLIENTS -->
-<span id="anchorClients"></span>
-<section id="honeSectionClients">  
-    <div class="title">Clients</div>
-    <div class="honeDoubleSeparator"></div>
-    <div class="clientsList">
-    <ul>
-    	<li class="honeClientsCategory">Client List<img src="media/img/downArrow-TEMP.png" />		</li>
-        <div class="honeClientsList" id="honeClientsStrategy">
-            <li>UX Design</li>
-            <li>Information Architecture</li>
-            <li>Strategic Consulting</li>
-        </div>
-    </ul>
-    
-    
-    
-    
-    </div>
-    
-</section>
+
+
+		<!-- CLIENTS -->
+		<section id="clients">
+			<div id="honeSectionClients">  
+			    <div class="title">Clients</div>
+			    <div class="honeDoubleSeparator"></div>
+			    <div class="clientsList">
+			    <ul>
+					<li>UX Design</li>
+					<li>Information Architecture</li>
+					<li>Strategic Consulting</li>
+					<li>UX Design</li>
+					<li>Information Architecture</li>
+					<li>Strategic Consulting</li>
+					<li>UX Design</li>
+					<li>Information Architecture</li>
+					<li>Strategic Consulting</li>
+					<li>UX Design</li>
+					<li>Information Architecture</li>
+					<li>Strategic Consulting</li>
+			    </ul>
+			  </div><!-- honeSectionClients -->
+		</section>
 
 
 
@@ -186,108 +163,76 @@
 
 
 
-<section id="honeSectionContact"> 
 
-<div class="title" id="titleContact">Contact</div>
-<div class="honeDoubleSeparator"></div>
-
-<h3 class="honeContactText">We want to hear from you. Whether you are a prospective client, interested in joining the team or simply a fan of your work, say hi.</h3>
-<form class="honeContactForm" action="media/php/sendmail.php">
-<input name="honeContactInputName" placeholder="Your Name" type="input" />
-<input name="honeContactInputEmail" placeholder="email @ddress" type="input" />
-<input name="honeContactMessage" type="input" />
-</form>
-
-</section>
+		<section id="contact"> 
+			<div class="title" id="titleContact">Contact</div>
+			<div class="honeDoubleSeparator"></div>
+			
+			<h3 class="honeContactText">
+				We want to hear from you. Whether you are a prospective client, interested in joining the team or simply a fan of your work, say hi.
+			</h3>
+			<form class="honeContactForm" action="media/php/sendmail.php">
+				<input name="honeContactInputName" placeholder="Your Name" type="input" />
+				<input name="honeContactInputEmail" placeholder="email @ddress" type="input" />
+				<input name="honeContactMessage" type="input" />
+				<input name="honeContactMessage" type="input" />
+				<input name="honeContactMessage" type="input" />
+				<input name="honeContactMessage" type="input" />
+			</form>
+		
+		</section>
 
 
 <footer>
 <div class="honeFooter">&copy;Hone, LLC - All Rights Reserved</div>
 </footer>
 
-<!--
+</div><!--  END .page-wrapper -->
 
-<video style="clear:right" width="320" height="240" controls="controls">
-  <source src="movie.mp4" type="video/mp4" />
-  <source src="movie.ogg" type="video/ogg" />
-  Your browser does not support the video tag.
-</video> 
-<form action="media/php/sendmail.php">
-<div><input type="input" /></div>
-<input type="input" />
-</form>
+<header>
+	<a class="logo" href="#home"><h1>Hone</h1></a>
+   
+	<!--    HORIZONTAL NAV -->
+    <div class="nav-container">
+		<div class="nav-wrapper">
+			<nav id='nav' role='navigation'>
+			<ul class='clearfix'>
+				<li><a class='selected' href='#about' tabindex='-1'>home</a></li>
+				<li><a href='#team' tabindex='-1'>team</a></li>
+				<li><a href='#clients' tabindex='-1'>clients</a></li>
+				<li><a href='#contact' tabindex='-1'>contact</a></li>
+			</ul>
+			</nav>
+		</div><!-- END .nav-wrapper -->
+	</div><!-- END .nav-container -->
+	
+	<!-- 	MINI NAV -->
+	<div class="mini-nav-wrapper">
+		<div class="mini-nav-btn">menu</div>
+			<ul class="mini-nav-list">
+				<li><a href='#about' class="selected">home</a></li>
+				<li><a href='#team'>team</a></li>
+				<li><a href='#clients'>clients</a></li>
+				<li><a href='#contact' class="last">contact</a></li>
+			</ul>
+	</div><!-- END .mini-nav-wrapper -->
+</header>
 
 
-onmouseover="javascript:openItem('.honeMainTitle')" onmouseout="javascript:doEffect(this,{opacity:1, fontSize:'430%'},15)"
+</div><!-- end #wrapper -->
 
--->
+
+
+
 <script type="text/javascript" language="javascript" src="media/js/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" language="javascript" src="media/js/jquery.transit.min.js"></script>
-
-<!--<script type="text/javascript" language="javascript" src="media/js/raphael-min.js"></script>-->
-
-<!--<script type="text/javascript" language="javascript" src="media/js/touch.js"></script>-->
-
-<script type='text/javascript' src='media/js/jquery.min.js'></script>
-<script type='text/javascript' src='media/js/jquery.flippy.min.js'></script>
-<!--
-<script>
-var paper = Raphael($(window).width() - 45, 7, 0, '100%');
-paper.path('M28.516,7.167H3.482l12.517,7.108L28.516,7.167zM16.74,17.303C16.51,17.434,16.255,17.5,16,17.5s-0.51-0.066-0.741-0.197L2.5,10.06v14.773h27V10.06L16.74,17.303z').attr({fill: "#fff"});
-</script>
--->
-
-<script type="text/javascript">
-$(document).ready( function() {
-    /*alert('hi')
-	$('#container_id').fileTree({ root: 'media/get_logged_sub_account.json' }, function(file) {
-        alert(file);
-    });*/
-	
-doEffect('.honeServicesCategory',{height:24},40)
-	
-});
-
-$('#buttonPrev').click(function() {
-    doEffect('#honeTeamMemberContainer',{left:-($('.honeTeamMember').width())},12,true);
-});
-
-$('#buttonNext').click(function() {
-    doEffect('#honeTeamMemberContainer',{left:$('.honeTeamMember').width()/2},12,true);
-});
-
-var staticHeight = 24
-$('.honeServicesCategory').click(function() {
-	
-	var itemHeight = $(this).height();
-	doEffect('.honeServicesCategory',{height:staticHeight},40)
-	doEffect(this,{height:itemHeight>100?staticHeight:200},20);
-	var offsetOffset = (Math.round($(this).offset().top) + 61);
-	//alert(offsetOffset);
-    var offset = $(this).offset().top - offsetOffset; //510 1  -50-  //560 2  - 50 -  //630 3  //675 4
-	if(itemHeight<100){scroll($(this),offset)}
-});
+<script type="text/javascript" language="javascript" src="media/js/libs/jquery.easing.1.3.js"></script>
+<script type="text/javascript" language="javascript" src="media/js/libs/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" language="javascript" src="media/js/functions.js"></script>
+<script type="text/javascript" language="javascript" src="media/js/libs/waypoints.min.js"></script>
+<script type="text/javascript" language="javascript" src="media/js/libs/validate.min.js"></script>
 
 
 
-var cssTransitionSupported = false;
-
-$(document).ready(function(){isCssTransitionSupported();init()});
-
-$(window).resize(function() {});
-/*$(document).bind("contextmenu",function(e){return false;});*/
-
-function init(){}
-
-function isCssTransitionSupported(){return false; cssTransitionSupported = $('#test').transition({opacity:1}) ? false : true}
-
-function doEffect(o,props,speed,isJS){$(o)[isCssTransitionSupported()==false&isJS==false?'transition':'animate'](props,((10/speed)*1000))}
-
-function scroll(o,offset){$('html,body').animate({
-scrollTop: $(o).offset().top + (!offset ? 0 : offset)
-}, 800);}
-
-</script>
 
 </body>
 </html>
