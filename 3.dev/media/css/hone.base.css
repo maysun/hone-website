@@ -152,7 +152,7 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Colo
 	.honeServicesCategory img{float:right; padding:9px 8px 0 0}
 	.honeServicesList{display:none}
 	.button{cursor:pointer; margin-left:1px; background:#616367; float:right; color:#000; width:45px; height:45px}
-	#honeTeamMemberContainer{position:relative; overflow:hidden; width:1200px}
+	#honeTeamMemberContainer{position:relative; overflow:hidden; width:1800px}
 	.honeTeamMember{margin:8px 15px 0 0; width:310px; height:auto;  float:left; cursor:pointer}
 	.honeTeamMemberName{font-size:25px;color:#fff; margin-top:6px}
 	.honeTeamMemberRole{font-size:17px;color:#959595; }
