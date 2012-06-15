@@ -36,21 +36,20 @@
 <link rel="apple-touch-icon-precomposed" type="text/css" href="/media/img/appIcon.png" >
 <!--<link rel="apple-touch-startup-image" type="text/css" href="/media/img/iOSsplash.png" >-->
 <link media="all" rel="stylesheet" href="media/css/hone.base.css?v=2" />
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 
 <header>
 <div id="honeHead">
-    <img onclick="javascript:scroll('body')" class="honeLogo" id="honeLogo" src="media/img/honeLogo.svg" alt="Hone"/>
+    <img onclick="javascript:scroll('body')" class="honeLogo" id="honeLogo" src="media/img/honeLogo.png" alt="Hone"/>
     <nav>
         <div class="honeNav">
-        <a href="javascript:scroll('#titleTeam')">ABOUT</a>
-        <a href="javascript:scroll('#titleContact')">TEAM</a>
-        <a href="javascript:scroll('#titleTeam')">CLIENTS</a>
-        <a href="javascript:scroll('#titleContact')">CONTACT</a>
+        <a href="javascript:scroll('#anchorServices')">Services</a>
+        <a href="javascript:scroll('#anchorContact')">Contact</a>
         </div>
     </nav>
 </div>
@@ -60,7 +59,7 @@
 <section id="honeAbout">
 <h2 class="honeMotto">SHARPEN THE CUTTING EDGE</h2>
 
-<h1 class="honeCreed">Hone is an independent design collective comprised of passionate designers, developers and thinkers committed to inno­va­tive brand design for the digital age. Hone works with orga­ni­za­tions large and small to solve the chal­lenges of con­tem­po­rary design and brand-​building, focused on results that con­tribute to the larger cul­tural context.</h1>
+<h1 class="honeCreed">Hone is an independent design <a href="javascript:scroll('#anchorCollective')">collective</a> comprised of passionate designers, developers and thinkers committed to inno­va­tive brand design for the digital age. Hone works with orga­ni­za­tions large and small to solve the chal­lenges of con­tem­po­rary design and brand-​building, focused on results that con­tribute to the larger cul­tural context.</h1>
 </section>
 
 <!--<div id="box" onclick="javascript:flip(this)" style="width:300px; height:150px; background-color:#ccc;  padding:2px; float:left; margin-bottom:10px"></div>
@@ -71,6 +70,8 @@
 -->
 
 
+<!-- SERVICES -->
+<span id="anchorServices"></span>
 <section id="honeSectionServices">  
     <div class="title">Services</div>
     <div class="honeDoubleSeparator"></div>
@@ -119,26 +120,82 @@
 </section>
 
 
-<section id="honeSectionTeam"> 
-	<div class="title" id="titleTeam">Team</div>
-    <div class="honeDoubleSeparator"></div>
 
-<div class="teamMemberContainer" style="z-index:3"></div>
-<div class="teamMemberContainer" style="z-index:2"></div>
-<div class="teamMemberContainer" style="z-index:1"></div>
+<!-- COLLECTIVE -->
+<span id="anchorCollective"></span>
+<section id="honeSectionTeam">
+<div class="title">Collective</div>
+<div class="honeDoubleSeparator"></div>
+
+
+<div id="honeTeamMemberContainer">
+	
+	<div class="honeTeamMember" style="z-index:3">
+		<img src="media/img/team/mason.png" />
+		<div class="honeTeamMemberName">John "Red" Ginger</div>
+		<div class="honeTeamMemberRole">Creative Technologist</div>
+		<div class="honeTeamMemberSocial">Twitter | Facebook | G+</div>
+		<div class="honeTeamMemberQuote">"Action may not always bring happiness, but there is no happiness without action"</div>
+	</div>
+	
+	<div class="honeTeamMember" style="z-index:2"></div>
+	<div class="honeTeamMember" style="z-index:1"></div>
+	
+</div>
+
+<div id="honeTeamNavContainer">
+	<div class="button" id="buttonPrev"></div>
+	<div class="button" id="buttonNext"></div>
+</div>
+
+
 
 </section>
+
+
+
+
+
+
+
+<!-- CLIENTS -->
+<span id="anchorClients"></span>
+<section id="honeSectionClients">  
+    <div class="title">Clients</div>
+    <div class="honeDoubleSeparator"></div>
+    <div class="clientsList">
+    <ul>
+    	<li class="honeClientsCategory">Client List<img src="media/img/downArrow-TEMP.png" />		</li>
+        <div class="honeClientsList" id="honeClientsStrategy">
+            <li>UX Design</li>
+            <li>Information Architecture</li>
+            <li>Strategic Consulting</li>
+        </div>
+    </ul>
+    
+    
+    
+    
+    </div>
+    
+</section>
+
+
+
+
+
 
 
 <section id="honeSectionContact"> 
 
 <div class="title" id="titleContact">Contact</div>
 <div class="honeDoubleSeparator"></div>
-<h3>We want to hear from you. Whether you are a prospective client, interested in joining the team or simply a fan of your work, say hi.</h3>
+
+<h3 class="honeContactText">We want to hear from you. Whether you are a prospective client, interested in joining the team or simply a fan of your work, say hi.</h3>
 <form class="honeContactForm" action="media/php/sendmail.php">
-<div>Name<div><input name="honeContactInputName" type="input" />
-<div>Email<div><input name="honeContactInputEmail" type="input" />
-<div>Message<div><input name="honeContactMessage" type="input" />
+<input name="honeContactInputName" placeholder="Your Name" type="input" />
+<input name="honeContactInputEmail" placeholder="email @ddress" type="input" />
+<input name="honeContactMessage" type="input" />
 </form>
 
 </section>
@@ -187,35 +244,47 @@ $(document).ready( function() {
         alert(file);
     });*/
 	
-
+doEffect('.honeServicesCategory',{height:24},40)
 	
 });
 
-	
- $('.honeServicesCategory').click(function() {
+$('#buttonPrev').click(function() {
+    doEffect('#honeTeamMemberContainer',{left:-($('.honeTeamMember').width())},12,true);
+});
 
-  var test = 'ul .' + $(this).attr('class');
-  //$(test).hide();
-  //$('.servicesList' + this + ' .honeServicesList').toggle();
-  //doEffect($('.servicesList' + this + ' .honeServicesList'),{height:auto},5)
-  $(test).show();
-  //$('#honeServicesDesign').animate({ height: '200px'},500, function() {});
-  
+$('#buttonNext').click(function() {
+    doEffect('#honeTeamMemberContainer',{left:$('.honeTeamMember').width()/2},12,true);
+});
+
+var staticHeight = 24
+$('.honeServicesCategory').click(function() {
+	
+	var itemHeight = $(this).height();
+	doEffect('.honeServicesCategory',{height:staticHeight},40)
+	doEffect(this,{height:itemHeight>100?staticHeight:200},20);
+	var offsetOffset = (Math.round($(this).offset().top) + 61);
+	//alert(offsetOffset);
+    var offset = $(this).offset().top - offsetOffset; //510 1  -50-  //560 2  - 50 -  //630 3  //675 4
+	if(itemHeight<100){scroll($(this),offset)}
 });
 
 
 
 var cssTransitionSupported = false;
+
 $(document).ready(function(){isCssTransitionSupported();init()});
-$(window).resize(function() {paper.setViewBox($(window).width() - 45, 7)
-});
+
+$(window).resize(function() {});
 /*$(document).bind("contextmenu",function(e){return false;});*/
+
 function init(){}
-function isCssTransitionSupported(){cssTransitionSupported = $('#test').transition({opacity:1}) ? true : false}
-function doEffect(o,props,speed){$(o)[cssTransitionSupported==false?'transition':'animate'](props,((10/speed)*1000))}
-function openItem(o){doEffect(o,{opacity:.2, fontSize: 90},12)}
-function scroll(o){$('html,body').animate({
-scrollTop: $(o).offset().top
+
+function isCssTransitionSupported(){return false; cssTransitionSupported = $('#test').transition({opacity:1}) ? false : true}
+
+function doEffect(o,props,speed,isJS){$(o)[isCssTransitionSupported()==false&isJS==false?'transition':'animate'](props,((10/speed)*1000))}
+
+function scroll(o,offset){$('html,body').animate({
+scrollTop: $(o).offset().top + (!offset ? 0 : offset)
 }, 800);}
 
 </script>
