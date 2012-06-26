@@ -1,6 +1,6 @@
 /* _______________________________________________
 AUTHOR:		Mason Brown - http://maysundays.com
-CONTENT:	Hone - js - main functions
+CONTENT:	Hone - js - main nav functions
 _________________________________________________*/
 
 //PAGE SCROLLING NAVIGATION

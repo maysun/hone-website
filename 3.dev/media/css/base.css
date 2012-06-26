@@ -1,0 +1,279 @@
+/* ___________________________________________________________________________________________________________________________________________
+CONTENT:	Hone Base Styles
+AUTHOR:		Hone, LLC
+______________________________________________________________________________________________________________________________________________
+
+TABLE OF CONTENTS:
+
+1. HTML Root
+2. Typograpy
+3. MQ: 0px
+4. MQ: 480px
+5. MQ: 768px
+6. MQ: 1024px
+7. MQ: 1200px
+8. MQ: 1456px
+
+=================== */
+
+
+/* 1. HTML ROOT  */
+html { margin: 0; padding: 0; background:url(../img/tileBg.jpg) fixed; /*background-size: 50%;*/}
+body { width:100%; height:100%; margin:0; padding: 0;}
+ul {font-weight: 400; float: left; width: 100%; height: auto; margin: 0 0 40px; }
+
+
+/* 2. TYPOGRAPHY  ============================================================================================================================= */
+@font-face {
+    font-family: 'Edding';
+    src: url('../fonts/edding/edding850-webfont.eot');
+    src: url('../fonts/edding/edding850-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/edding/edding850-webfont.woff') format('woff'),
+         url('../fonts/edding/edding850-webfont.ttf') format('truetype'),
+         url('../fonts/edding/edding850-webfont.svg#Edding850Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {*font-size: 1em;font-weight: 200; font-size: 100%; line-height: 1.5625em; text-align: justify; color:#fff;
+	   font-family: 'Open Sans', sans-serif; -webkit-font-smoothing:antialiased; font-smoothing:antialiased; text-rendering:optimizeLegibility;}
+	   
+h1, h2, h3, h4, h5, h6 {font-family: Verdana, Open Sans, sans-serif; font-weight: 200; text-align: left; line-height: 1em; margin: 0; padding: 0; letter-spacing:1px;}
+h1 {font-size: 2.55em; line-height: 1.2em;}		/* 40px */
+h2 {font-family: 'Edding', Helvetica, Arial, sans-serif; font-size: 2.5em; line-height: 1.2em; text-transform: uppercase;
+	float: left; width: 100%; border-bottom: 1px dotted #4e4f4f; padding: 50px 0 5px; margin: 0 0 10px 0;}
+h3 {font-size: 1.75em; line-height: 1.2em;}	 	/* 28px */
+h4 {font-size: 1.5em; linev-height: 1.2em;}		/* 24px */
+h5 {font-size: 1.375em; line-height: 1.2em;}	/* 22px */
+h6 {font-size: 1.125em; line-height: 1.2em;}	/* 18px */
+p {font-family: 'Open Sans', sans-serif; font-size:1em; font-weight: 400; line-height: 1.5em; color: #fff; margin: 0 0 20px 0; text-align: left;}
+a  {color:#00ffcc; text-decoration: none; cursor:pointer}
+.emDash{opacity: .5;}
+
+
+
+
+
+
+/* 3. @media screen and (min-width: 0) =================================================================================================== */
+@media screen and (min-width: 0em) {
+
+	/* 	GLOBAL CONTAINERS */
+	#wrapper {
+		float: left; width: 96%; margin: 0; padding: 0 2%; overflow: hidden;
+		-webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease;
+	}
+	.page-wrapper {float: left; width: 100%;  margin:0;}
+	section {float: left; width: 100%; height: auto;}
+	
+	
+	footer {
+		float:left;width:100%; height:50px;font-size:0.875em; font-weight:400; text-align:center; color:#ccc; padding:20px 0; border-top:1px dotted #4e4f4f;
+	}
+
+	
+	/* 	HEADER & MAIN NAV */
+	.header-bg {display: none;}
+	header {
+		position:fixed;z-index:900;display:block;top:0;left:0;right:0;
+		width: 100%; height: auto;  max-height: 140px;
+		background: #252526;  /* border-bottom:1px solid #000; */
+        -webkit-box-shadow: inset 0px -8px 20px 0px rgba(0, 0, 0, .2);
+        box-shadow: inset 0px -8px 20px 0px rgba(0, 0, 0, .4);
+	}
+	h1 a.logo {
+		float:left; width:20%; min-width: 120px;  background: url(../img/logo.svg) no-repeat center transparent;
+		background-size: 100%; line-height: 1em; text-indent: -9999px; overflow: hidden; cursor:pointer; margin:0 0 0 2%;
+		position: relative; z-index: 900; 
+	}
+
+	#nav, #nav ul, #nav a {visibility: collapse; width: 0; height: 0; margin: 0; padding: 0; list-style: none; font-size: 1.05em;}
+	.mini-nav-wrapper {visibility: visible; display: block; position: absolute; width: 100%; top: 0; right: 0; height: auto; }
+	.mini-nav-btn {
+		float:right;width:50%;height:auto; height: 40px; padding:0; margin: 0 0 0 0; overflow:hidden;
+		background: url(../img/arrow-down-wt.svg) no-repeat;
+		background-size: 10%;
+		background-position-x: 90%;
+		background-position-y: center;  
+		text-align:center; font-size:1em; font-family: 'Open Sans'; color: #fff; cursor: pointer; text-transform: uppercase;
+	}
+	.mini-nav-btn-active {
+		background: url(../img/arrow-up-wt.svg) no-repeat;
+		background-size: 10%;
+		background-position-x: 90%;
+		background-position-y: center;
+	}
+	.mini-nav-btn:hover {opacity: .8; }
+	ul.mini-nav-list {
+		display:none; float: left; width:100%; height:100%;
+		position:relative;top:0; padding: 0; text-transform:uppercase; background:#252526; list-style: none;
+        -webkit-box-shadow:  0px 8px 20px 0px rgba(0, 0, 0, .5);
+        box-shadow:  0px 8px 20px 0px rgba(0, 0, 0, .5);
+        border-bottom:1px solid #222;;
+	}
+	ul.mini-nav-list li a 	{
+		float: left; width: 94%; color: #fff; font-size: 34px; border-bottom: 1px dotted #4e4f4f; cursor: pointer; padding: 10px 0;
+		font-family: 'Open Sans', Open Sans, Helvetica, Arial; font-weight: 100; text-shadow: #2e2f2f 0px 1px 1px; }
+	ul.mini-nav-list li .last {border: none;}
+	.mini-nav-list li {width: 100%; padding: 0 10px;}
+	ul.mini-nav-list li a.selected {color: #0FC;}
+	ul.mini-nav-list li a, .mini-nav-btn, .mini-nav-btn-active {-webkit-tap-highlight-color: rgba(204,0,0,0);}
+	
+	
+	/* 	GENERAL STYLES */
+	.button{cursor:pointer; margin-left:1px; background:#616367; float:right; color:#000; width:45px; height:45px}
+	#about h1 {
+		font-family:'Edding'; font-size: 3em; padding: 0; margin: 80px 0 15px 0; line-height: .8em; text-transform: uppercase;
+		-webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; color: #fff;
+	}
+	.column-wrap {
+		float: left;width: 100%;height: auto;text-align: left;
+		-moz-column-count: 2;
+		-moz-column-gap: 14px;
+		-webkit-column-count: 2;
+		-webkit-column-gap: 14px;
+		column-count: 2;
+		column-gap: 14px;
+	}
+	
+	
+	
+	/* 	TEAM STYLES */
+	.honeContactText {font-family: 'Open Sans', sans-serif; color:#fff; font-size:16px; color: #fff; line-height: 21px; margin: 10px 0 11px 0}
+	#honeTeamViewport{overflow:hidden;width:300px;height:700px; }
+	#honeTeamNavContainer{position:relative; z-index: 5; top:365px; left:0 }
+	#teamMemberContainer{position:relative; width:2500px; clear:left  }
+	.teamMember{margin:8px 15px 0 0; width:310px; height:auto;  float:left; cursor:pointer}
+	.teamMemberName{font-size:25px;color:#fff; margin-top:6px}
+	.teamMemberRole{font-size:17px;color:#959595; }
+	.teamMemberSocial{}
+	.teamMemberQuote{
+		padding:12px 0 12px 0; margin:10px 0 10px 0; border-top:1px #444546 solid;border-bottom:1px #444546 solid;
+		font-family: 'Open Sans', sans-serif; font-size:17px; font-style:italic; text-align: center;
+	}
+	
+	
+	/* 	CONTACT STYLES */
+	#contactFormStatus{display:none;}
+	.contactForm input{
+		text-align:left; display:block;margin-bottom:17px; width:91%; height:25px; padding:13px;
+		border:1px solid #494a4c; background:#333435; font-size: 18px; color:#8a8a8a;
+	}
+	.contactForm input:focus{color:#fff}
+	.contactForm div{color:#fff; font-size:11px}
+	.contactInfo{display:none}
+
+}
+
+
+
+/* 4. @media screen and (min-width: 480px) =================================================================================================== */
+@media screen and (min-width: 40em) {
+
+	header { height: 42px;}
+	h1 a.logo { -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; }
+	#about h1 { color:#0FC;}	
+	h1.slogan {font-size: 4em;}
+	.column-wrap {-moz-column-count: 3;-webkit-column-count: 3; column-count: 3;}
+	#honeTeamViewport{overflow: hidden;width:650px;height:100%; }
+	#teamMemberContainer{overflow: visible;  width:100%; height: 100% }
+	.teamMember{height: 387px; width:background:#fff; overflow: hidden}
+	.contactForm input{width:50%}
+	.contactInfo{display:block; border:1px solid red; height:410px; float:right; width:30%}
+	
+}
+
+
+
+/* 5. @media screen and (min-width: 768px) =================================================================================================== */
+@media screen and (min-width: 48em) {
+	
+	/* 	HEADER STUFF */
+	header {height: 189px; max-height: 189px; background: transparent;
+        -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0); box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);}
+	.header-bg {
+		display: block; width:  100%; background: none; position: absolute; top: -20%; left: 0;
+		-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;
+		-webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease;
+	} 
+	.header-bg img {
+		display: block; width: 1240px; height: 189px; min-height: 189px;
+		-webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease;
+	}
+	h1 a.logo {width:25%;  margin:1.5% 0 0 2%; line-height: 1.7em;}
+	
+	
+	/* WIDE NAV */
+	.nav-container {width: 100%; height: auto; margin: 0 auto; }
+	.nav-wrapper {position: relative; width: auto; height:auto; top: 0; margin: 0 auto; padding: 0; }
+	.mini-nav-wrapper {visibility: collapse; display: none;  width: 0; }
+	ul { list-style-type: none; margin: 0; }
+	#nav {visibility:visible; width:auto; height:auto; position:absolute;z-index:999;top:12px;right:0;margin:0; padding:0 2% 0 0; }
+	#nav ul {visibility: visible; width: 100%; height: 30px; text-align: center; display: inline-block;  margin: 0; padding: 0; }
+	#nav li { float: left; font-family:'Open Sans'; text-transform:uppercase; }
+	#nav a {visibility:visible;display:block;width:100%;height:30px; margin:0 0.6875em;padding: 0.5em 0.3125em 0.125em 0.3125em; 
+			color:#fff;text-decoration:none;font-style: normal;
+			background: /* url(../img/nav-selected-arrow.png) no-repeat center 55px */ rgba(255,255,255,0.0);
+			-webkit-transition: all .4s ease; -moz-transition: all .4s ease; transition: all .4s ease; 
+			-moz-border-radius: 8px; -webkit-border-radius:8px; -o-border-radius:8px; -ms-border-radius:8px; -khtml-border-radius:8px; border-radius:8px;}
+	#nav a:hover { font-style: normal; text-decoration:none;
+		background: /* url(../img/nav-selected-arrow.png) no-repeat center 55px */ rgba(255,255,255, 0.05);
+		-webkit-transition: all .4s ease; -moz-transition: all .4s ease; transition: all .4s ease;
+		-webkit-box-shadow:inset 0 0 8px rgba(0,0,0,0.1);-moz-box-shadow:inset 0 0 8px rgba(0,0,0,0.1);box-shadow:inset 0 0 8px rgba(0,0,0,0.1);}
+	#nav a.selected {  color: #0fc; font-style: normal; text-decoration:none;
+		background: /* url(../img/nav-selected-arrow.png) no-repeat center 35px */ rgba(255,255,255,0.0);
+		-webkit-box-shadow:inset 0 0 8px rgba(0,0,0,0);-moz-box-shadow:inset 0 0 8px rgba(0,0,0,0);box-shadow:inset 0 0 8px rgba(0,0,0,0);
+		-webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease;}
+		#nav a:focus { outline: 0; }
+
+
+	/* 	GENERAL STYLES */
+	h2 {padding: 120px 0 5px;}
+	#about h1 {font-size: 8em; margin: 150px 0 40px; color: red;}
+	#about p {font-size: 1.2em;}
+
+	.column-wrap {-moz-column-count: 4;-webkit-column-count: 4; column-count: 4;}
+	 
+}
+
+
+
+
+/* 6. @media screen and (min-width: 1024px) =================================================================================================== */
+@media screen and (min-width: 64em) {
+	
+	.header-bg {top: -5%;}
+	h1 a.logo {width:27%;  margin:1.7% 0 0 2%; line-height: 2.1em;}
+	h2 {padding: 145px 0 5px;}
+	#about h1 {font-size: 9em; margin: 170px 0 40px; color: orange;}
+	#about p {font-size: 1.4em;}
+
+}
+
+
+
+/* 7. @media screen and (min-width: 1200px) =================================================================================================== */
+@media screen and (min-width: 75em) {
+	
+	.header-bg {top: -5%;}
+	.header-bg img {float: left; width: 100%; margin: 0 auto;}
+	h1 a.logo {width:325px;  margin:24px 0 0 3%;}
+	#about h1 {font-size: 11em; margin: 180px 0 40px; color: green;}
+	#wrapper {float: left; width: 94%; margin: 0; padding: 0 3%; overflow: hidden; }
+	#nav {padding: 0 3% 0 0;}
+
+}
+
+/* 8. @media screen and (min-width: 1456px) =================================================================================================== */
+@media screen and (min-width: 91em) {
+	
+	#wrapper {float: left; width: 90%; margin: 0; padding: 0 5%; overflow: hidden; }
+	#nav {padding: 0 5% 0 0;}
+	.header-bg {top: 0;}
+	h1 a.logo {width:325px;  margin:28px 0 0 5%;}
+	h2 {padding: 155px 0 5px;}
+	#about h1 {font-size: 11em; margin: 190px 0 40px; color: purple;}
+	#about p {
+		-moz-column-count: 2;-webkit-column-count: 2; column-count: 2;
+		-moz-column-gap:40px; -webkit-column-gap: 40px; column-gap: 40px;}
+}

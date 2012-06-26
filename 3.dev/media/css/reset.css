@@ -1,0 +1,128 @@
+/* Reset */
+/*************************************************/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, b, i, hgroup, menu, nav, section, time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+}
+
+ol, ul {
+list-style: none;
+}
+
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+caption, th, td {
+text-align: left;
+font-weight: normal;
+}
+
+blockquote, q {
+quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+
+article, aside, figure, footer, header, hgroup, nav, section {
+display: block;
+}
+
+ins, mark {
+background-color: #ff9;
+text-decoration: none;
+}
+
+button {
+overflow: visible;
+font-size: 1em;
+padding: 0;
+}
+
+input, select {
+vertical-align: middle;
+}
+
+/* Tools */
+/***********************/
+
+.clearfix:after,
+.clearfixItems li:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+
+.clear {
+clear: both;
+}
+
+.ir, .sprite {
+text-indent: -9999px;
+overflow: hidden; /* Stop focus outline issues */
+}
+
+del, .strike {
+text-decoration: line-through;
+}
+
+abbr[title], dfn[title], acronym {
+border-bottom:1px dotted #000;
+cursor:help;
+}
+
+button {
+overflow: visible;
+font-size: 1em;
+padding: 0;
+}
+
+.hide {
+display: none;
+}
+
+strong,.strong,b,th,dt,label {
+font-weight: bold;
+}
+
+i, em, .italic, blockquote, cite, q {
+font-style: italic;
+}
+
+.norm, strong span, label span, h1 span, h2 span, h3 span {
+font-weight: normal;
+}
+
+blockquote em, blockquote cite, blockquote i {
+font-variant: normal; 
+}
+
+small, .small {
+font-size: smaller;
+}
+
+input.submit, button, a, label {
+cursor: pointer;
+}
+
+legend {
+position: absolute;
+z-index: -1;
+font-size: 0;
+height: 0;
+color: transparent;
+}
+
+html{-webkit-overflow-scrolling:touch;-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
